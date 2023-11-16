@@ -1,0 +1,26 @@
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news-button {
+    background-color: rgb(230, 30, 20);
+    border: none;
+    border-radius: 10px;  /* Adjusted to create a rounded rectangle effect */
+    width: 150px;  /* Adjusted width */
+    height: 40px;  /* Adjusted height */
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;  /* Added to center the text */
+    align-items: center;  /* Added to center the text */
+    justify-content: center;  /* Added to center the text */
+    color: white;
+}
+
+.news-button:hover {
+    background-color: darkred;
+}
+
+.p {
+    color: white;
+}

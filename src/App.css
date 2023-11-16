@@ -1,0 +1,133 @@
+
+.App {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  justify-content: flex-start; /* This will align its children to the top */
+
+}
+
+.App-header {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0.125rem 0.25rem 0px;
+  padding: 2% 0%;
+  width: 100%;
+  min-height: 0.5%;
+  max-height: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.format{
+  height: 80%;
+  width: 80%;
+  padding: 2%;
+}
+
+.App-footer{
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0.125rem 0.25rem 0px;
+  padding: 1% 0%;
+  width: 100%;
+  min-height: 0.5%;
+  max-height: 2vh;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Separate the items to the left and right */
+  align-items: center; /* Vertically align items to the center */
+  padding: 10px; /* Adjust the padding as needed */
+  padding-top: 3%;
+
+}
+.nav {
+  display: flex;
+}
+.header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 2%; /* Add spacing between the list items */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin for the last list item */
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(102, 102, 102); /* Text color for links */
+  font-weight: 500; /* Font weight for links */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+  color: darkred; /* Color on hover */
+}
+
+.home{
+  padding-right: 70vh;
+  padding-left: 1vh;
+}
+
+/* Media query for screens with a maximum width of 320px (mobile devices) */
+@media (max-width: 425px) {
+  .home {
+    padding-right: 20vh; /* Adjust the padding for smaller screens */
+  }
+
+  .profile {
+    padding-left: 4vh; /* Adjust the padding for smaller screens */
+  }
+}
+
+/* Style the user icon */
+.header ul li:last-child img {
+  width: 50px; /* Set the desired width for the user icon */
+  height: 50px; /* Set the desired height for the user icon */
+  border-radius: 50%; /* Make it round for a profile picture effect */
+  /*border: 1px solid rgb(125, 124, 124); /* Add a border or customize as needed */
+}
+
+/* CSS for hover effect */
+svg:hover path,
+svg:hover circle {
+  fill: darkred; /* Change to the desired hover color */
+  transition: fill 0.3s; /* Smooth color transition on hover */
+}
