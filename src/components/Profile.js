@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import userIcon from './images/user.svg';
+import '../components/styles/Profile.css'; // Import Header, ensure the path is correct
 
 const UserProfile = () => {
     const { id, age, location, gender, education, condition } = useParams();
@@ -15,7 +16,7 @@ const UserProfile = () => {
     }
   return (
     <div>
-      {backLink && <Link to={backLink} className="go-back-button">Go Back</Link>}
+      {backLink && <Link to={backLink} className="go-back-button">Ga Terug</Link>}
 
       <h1>Jouw profiel</h1>
       <div>

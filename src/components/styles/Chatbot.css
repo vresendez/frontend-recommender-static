@@ -33,7 +33,7 @@
   .chat-messages {
     overflow-y: auto;
     max-height: 80vh;
-    min-height: 70vh;
+    min-height: 50vh;
     flex: 1;
     flex-grow: 1;
     display: flex;

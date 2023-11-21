@@ -1,0 +1,13 @@
+.go-back-button {
+    text-decoration: none; /* removing underline */
+    color: #333; /* dark text color */
+    font-size: 16px; /* font size */
+    padding: 10px 2px; /* padding around links */
+    border-radius: 5px; /* rounded corners */
+    transition: background-color 0.3s ease; /* smooth background transition */
+  }
+  
+  .go-back-button:hover {
+    background-color: #ddd; /* lighter background on hover */
+  }
+  
