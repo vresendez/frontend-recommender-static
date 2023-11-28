@@ -18,7 +18,7 @@ const Chatbot = ({  }) => {
 
   return (
     <div className="chatbot">
-       <p>Deze nieuwsaanbeveler geeft je de meest relevante nieuwsartikelen. Zeg <b className='title'>"hoi"</b> om te beginnen</p>
+       <p>Deze nieuwsaanbeveler geeft je de relevante nieuwstitels van de dag. Zeg <b className='title'>"hoi"</b> om te beginnen</p>
       <iframe
         src={iframeSrc} 
          style={{ minWidth: '280px', width: '100%', minHeight: '410px' }}

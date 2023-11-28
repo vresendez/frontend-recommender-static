@@ -46,7 +46,7 @@ const Website = ({ selectedtags, articles }) => {
     };
     return (
         <div className="website-container">
-            <h4>Deze nieuwsaanbeveler geeft je de relevante nieuwsartikelen.</h4>
+            <h4>Deze nieuwsaanbeveler geeft je de relevante nieuwstitels van de dag.</h4>
             {/* <NewsButtons selectedtags={["All", ...selectedtags]} ontagClick={handleTagClick} /> */}
             <ul className="news-list">
                 {filteredArticles.map((article, index) => {
