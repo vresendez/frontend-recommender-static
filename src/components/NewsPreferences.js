@@ -81,7 +81,7 @@ const NewsPreferences = ({ onPreferencesSubmit }) => {
 
     return (
         <div className="preferences-form">
-            <h2>Selecteer uw favoriete nieuwscategorieën</h2>
+            <p>Deze nieuwsaanbeveler geeft je de meest relevante nieuwsartikelen. Selecteer je <b className='title'>favoriete nieuwsonderwerp</b> door erop te klikken om met de aanbevelingen te beginnen.</p>
             <div className="tags">
                 {toptags.map((tag) => (
                     <button

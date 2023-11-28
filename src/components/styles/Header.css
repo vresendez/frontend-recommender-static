@@ -3,7 +3,7 @@
   }
   
   .nav {
-    width: 90%; /* nav width */
+    width: 100%; /* nav width */
     max-width: 1200px; /* maximum width */
     margin: 0 auto; /* centering the nav */
     display: flex; /* using flexbox for layout */
@@ -34,7 +34,7 @@
 
   .link_two {
     text-decoration: none; /* removing underline */
-    color: #333; /* dark text color */
+    color: rgb(230, 30, 20); /* dark text color */
     font-size: 16px; /* font size */
     padding: 10px 15px; /* padding around links */
     border-radius: 5px; /* rounded corners */

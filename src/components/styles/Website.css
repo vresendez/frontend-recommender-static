@@ -60,3 +60,14 @@
     max-height: 40%;
     object-fit: cover;
 }
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+

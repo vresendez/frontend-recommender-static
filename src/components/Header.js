@@ -12,12 +12,8 @@ const Header = ({ id, age, location, gender, education, condition }) => {
     <nav className='nav'>
       <ul>
         <Link className='link' to={`/profile/${id}/${age}/${location}/${gender}/${education}/${condition}`}>
-          Profiel
-        </Link>
-
-        <Link className='link_two' to={`https://uva.fra1.qualtrics.com/jfe/form/SV_37wTXCn9lZyhwh0?ID=${id}&age=${age}&location=${location}&gender=${gender}&education=${education}&condition=${condition}&Q_Language=NL`}>
-          Doorgaan met de enquête
-        </Link>
+        Jouw profiel
+        </Link>        
       </ul>
     </nav>
   </header>

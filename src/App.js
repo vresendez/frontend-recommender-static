@@ -7,6 +7,7 @@ import UserProfile from './components/Profile.js';
 import Chatbot from './components/Chatbot/Chatbot.js';
 import PageWithHeader from './components/PageWithHeader.js';
 import { API_URL } from './config';
+import PageWithFooter from './components/PageWithFooter.js';
 
 import './App.css';
 
@@ -34,14 +35,13 @@ const handlePreferencesSubmit = (tags) => {
         
         <Routes>
         {/* Wrap each Route with PageWithHeader */}
-          <Route path="/news-preferences/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><NewsPreferences onPreferencesSubmit={handlePreferencesSubmit} /></PageWithHeader>} />
-          <Route path="/website/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><Website selectedtags={selectedtags} articles={articles} /></PageWithHeader>} />
-          <Route path="/chatbot/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><Chatbot articles={articles} /></PageWithHeader>} />
+          <Route path="/news-preferences/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><NewsPreferences onPreferencesSubmit={handlePreferencesSubmit} /><PageWithFooter /></PageWithHeader>} />
+          <Route path="/website/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><Website selectedtags={selectedtags} articles={articles} /><PageWithFooter /></PageWithHeader>} />
+          <Route path="/chatbot/:id/:age/:location/:gender/:education/:condition" element={<PageWithHeader><Chatbot articles={articles} /><PageWithFooter /></PageWithHeader>} />
           <Route 
             path="/profile/:id/:age/:location/:gender/:education/:condition" 
-            element={<PageWithHeader><UserProfile /></PageWithHeader>} 
+            element={<PageWithHeader><UserProfile /><PageWithFooter /></PageWithHeader>} 
           />
-     
           </Routes>
       </div>
     </Router>

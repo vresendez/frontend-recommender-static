@@ -26,14 +26,14 @@ const Website = ({ selectedtags, articles }) => {
         sendClickDataToBackend(clickData);
     };
     
-    const handleTagClick = (tag) => {
-        if (tag === "All") {
-            setFilteredArticles(articles);
-        } else {
-            const articlesByTag = articles.filter(article => article[4] === tag);
-            setFilteredArticles(articlesByTag);
-        }
-    };
+    // const handleTagClick = (tag) => {
+    //     if (tag === "All") {
+    //         setFilteredArticles(articles);
+    //     } else {
+    //         const articlesByTag = articles.filter(article => article[4] === tag);
+    //         setFilteredArticles(articlesByTag);
+    //     }
+    // };
     const sendClickDataToBackend = (clickData) => {
         // Replace with your backend API endpoint
         axios.post(`${API_URL}/api/clickData`, clickData)
@@ -46,8 +46,8 @@ const Website = ({ selectedtags, articles }) => {
     };
     return (
         <div className="website-container">
-            <h2>Deze nieuwsaanbeveler geeft je de relevante nieuwsartikelen</h2>
-            <NewsButtons selectedtags={["All", ...selectedtags]} ontagClick={handleTagClick} />
+            <h4>Deze nieuwsaanbeveler geeft je de relevante nieuwsartikelen.</h4>
+            {/* <NewsButtons selectedtags={["All", ...selectedtags]} ontagClick={handleTagClick} /> */}
             <ul className="news-list">
                 {filteredArticles.map((article, index) => {
                     const [id, title, link, fullSummary, tag, imageUrl] = article; // Adjust according to your actual article object structure
