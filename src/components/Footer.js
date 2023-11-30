@@ -8,7 +8,7 @@ const Footer = ({ id, age, location, gender, education, condition }) => {
   
     return (
       <footer className="footer">
-         <Link className='link_two' to={`https://uva.fra1.qualtrics.com/jfe/form/SV_37wTXCn9lZyhwh0?ID=${id}&age=${age}&location=${location}&gender=${gender}&education=${education}&condition=${condition}&Q_Language=NL`}>
+         <Link className='link_two' to={`https://uva.fra1.qualtrics.com/jfe/form/SV_efgzmlDj2xyuY5w?imid=${id}&age=${age}&location=${location}&gender=${gender}&education=${education}&condition=${condition}&Q_Language=NL`}>
            Doorgaan met de enquête →
          </Link>
          <p>&copy; 2023. All Rights Reserved.</p>
