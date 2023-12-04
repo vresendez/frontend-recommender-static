@@ -93,7 +93,7 @@ const NewsPreferences = ({ onPreferencesSubmit }) => {
                     </button>
                 ))}
             </div>
-            <button className="submit-button" onClick={handleSubmit}>Submit</button>
+            <button className="submit-button" onClick={handleSubmit}>Voer uw voorkeuren voor nieuwsonderwerpen in en ga verder met de nieuwsaanbeveler</button>
         </div>
     );
 };
