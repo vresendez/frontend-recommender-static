@@ -33,6 +33,7 @@ const NewsPreferences = ({ onPreferencesSubmit }) => {
                     // Get the top 5 tags
                     const top5tags = sortedtags.slice(0, 5);
                     setToptags(top5tags);
+                    
                 } else {
                     console.log('Unexpected API response:', response);
                 }
@@ -42,7 +43,7 @@ const NewsPreferences = ({ onPreferencesSubmit }) => {
         };
         fetchtags();
     }, []);
-
+    
     const handletagToggle = (tag) => {
         setSelectedtags((prev) =>
             prev.includes(tag) ? prev.filter((c) => c !== tag) : [...prev, tag]
@@ -83,13 +84,13 @@ const NewsPreferences = ({ onPreferencesSubmit }) => {
         <div className="preferences-form">
             <p>Deze nieuwsaanbeveler geeft je de relevante nieuwstitels van de dag. Selecteer je <b className='title'>favoriete nieuwsonderwerp</b> door erop te klikken om met de aanbevelingen te beginnen.</p>
             <div className="tags">
-                {toptags.map((tag) => (
+                {toptags.map((tag, index) => (
                     <button
                         key={tag}
                         className={`tag-button ${selectedtags.includes(tag) ? 'selected' : ''}`}
                         onClick={() => handletagToggle(tag)}
                     >
-                        {tag}
+                        {index + 1}. {tag}
                     </button>
                 ))}
             </div>
